@@ -1,68 +1,26 @@
 import 'package:flutter/material.dart';
-import './views/homepage.dart';
+import 'package:flutter_app/getx_middleware.dart';
+import 'package:flutter_app/widgets/bottom_navigation_bar.dart';
+import 'package:flutter_app/widgets/getx_widgets.dart';
+import 'package:flutter_app/widgets/route_navigation.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+
+import 'getx_bindings.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(BottomNavigationBarMainPage());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
-    );
-  }
-}
-
-// class MyHomePage extends StatefulWidget {
-//   MyHomePage({required Key key, required this.title}) : super(key: key);
-
-//   final String title;
-
-//   @override
-//   _MyHomePageState createState() => _MyHomePageState();
-// }
-
-// class _MyHomePageState extends State<MyHomePage> {
-//   int _counter = 0;
-
-//   void _incrementCounter() {
-//     setState(() {
-//       _counter++;
-//     });
-//   }
-
+// class MainPage extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text(widget.title),
+//     return GetMaterialApp(
+//       title: 'Demo',
+//       theme: ThemeData(
+//         primarySwatch: Colors.blue,
 //       ),
-//       body: Center(
-//         child: Column(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: <Widget>[
-//             Text(
-//               'You have pushed the button this many times:',
-//             ),
-//             Text(
-//               '$_counter',
-//               style: Theme.of(context).textTheme.headline4,
-//             ),
-//           ],
-//         ),
-//       ),
-//       floatingActionButton: FloatingActionButton(
-//         onPressed: _incrementCounter,
-//         tooltip: 'Increment',
-//         child: Icon(Icons.add),
-//       ),
+//       debugShowCheckedModeBanner: false,
+//       home: BottomSheetWidget(),
 //     );
 //   }
 // }

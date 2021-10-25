@@ -1,5 +1,5 @@
 import 'package:http/http.dart' as http;
-import 'package:flutter_app/models/product.dart';
+import 'package:flutter_app/api/models/product.dart';
 
 class RemoteServices {
   static var client = http.Client();

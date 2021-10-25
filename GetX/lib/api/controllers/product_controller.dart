@@ -1,6 +1,6 @@
 import 'package:get/state_manager.dart';
-import 'package:flutter_app/models/product.dart';
-import 'package:flutter_app/services/remote_services.dart';
+import 'package:flutter_app/api/models/product.dart';
+import 'package:flutter_app/api/services/remote_services.dart';
 
 class ProductController extends GetxController {
   var isLoading = true.obs;

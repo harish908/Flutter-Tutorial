@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:get/instance_manager.dart';
-import 'package:flutter_app/controllers/product_controller.dart';
-import 'package:flutter_app/views/product_tile.dart';
+import 'package:flutter_app/api/controllers/product_controller.dart';
+import 'package:flutter_app/api/views/product_tile.dart';
 
 class HomePage extends StatelessWidget {
   final ProductController productController = Get.put(ProductController());
